@@ -22,7 +22,7 @@
     font-size: 70px;
     font-family: 'PyeongChangPeace-Bold';
     font-weight: 300;
-    margin: 5px 0px 10px 0px;
+    margin: 5px 0px -5px 0px;
 }
 header {
     padding-bottom: 20px;
@@ -30,3 +30,83 @@ header {
     font-family: 'PyeongChangPeace-Light';
     text-align: center;
 }
+
+/* menu */
+#wrap #menu{
+    font-family: 'PyeongChangPeace-Light';
+    font-size: 20px;
+    width: 600px;
+    display: flex;
+    flex-direction: row;
+    margin-top: 5px;
+}
+#wrap #menu a{
+    position: relative;
+    display: inline-block;
+    padding: 10px 25px;
+    color: black;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    text-decoration: none;
+    font-size: 20px;
+    overflow: hidden;
+    transition: 0.2s;
+    border-radius: 10px 10px 10px 10px;
+}
+#wrap #menu a:hover{
+    color: white;
+    background: black;
+    box-shadow: 0 0 30px #feeab3, 0 0 40px #fedbb7, 0 0 50px #ff8bb2, 0 0 60px #825acf;
+    transition-delay: 1s;
+}
+#wrap #menu a span{
+    position: absolute;
+    display: block;
+ }
+ #wrap #menu a span:nth-child(1){
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(90deg, transparent, #feeab3);
+ }
+ #wrap #menu a:hover span:nth-child(1){
+    left: 100%;
+    transition: 1s; 
+ }
+ #wrap #menu a span:nth-child(3){
+    bottom: 0;
+    right: -100%;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(270deg, transparent, #ff8bb2);
+ }
+ #wrap #menu a:hover span:nth-child(3){
+    right: 100%;
+    transition: 1s;
+    transition-delay: 0.5s;
+ }
+ #wrap #menu a span:nth-child(2){
+    top: -100%;
+    right: 0;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(180deg, transparent, #fedbb7);
+ }
+ #wrap #menu a:hover span:nth-child(2){
+    top: 100%;
+    transition: 1s;
+    transition-delay: 0.25s;
+ }
+ #wrap #menu a span:nth-child(4){
+    bottom: -100%;
+    left: 0;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(360deg, transparent, #825acf);
+ }
+ #wrap #menu a:hover span:nth-child(4){
+    bottom: 100%;
+    transition: 1s;
+    transition-delay: 0.75s;
+ }
