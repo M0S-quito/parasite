@@ -56,7 +56,7 @@ header {
 #wrap #menu a:hover{
     color: white;
     background: black;
-    box-shadow: 0 0 30px #feeab3, 0 0 40px #fedbb7, 0 0 50px #ff8bb2, 0 0 60px #825acf;
+    /* box-shadow: 0 0 30px #feeab3, 0 0 40px #fedbb7, 0 0 50px #ff8bb2, 0 0 60px #825acf; */
     transition-delay: 1s;
 }
 #wrap #menu a span{
@@ -110,6 +110,4 @@ header {
     transition: 1s;
     transition-delay: 0.75s;
  }
- #wrap #menu{
-   
- }
+ 
