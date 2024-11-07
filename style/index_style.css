@@ -114,296 +114,119 @@ header {
     transition: 1s;
     transition-delay: 0.75s;
  }
- 
-/* clock */
-
-/* #wrap #content .clock{
-   display: flex;
-   justify-content: center;
-   align-items: center;
-   background: #acbcca;
+/* time */
+ #wrap #content #time{
    position: relative;
-   width: 450px;
-   height: 550px;
-   border-radius: 50px;
-   border-top-left-radius: 250px;
-   border-top-right-radius: 250px;
-   box-shadow: 45px 45px 45px -15px rgba(0, 0, 0, 0.15),
-   inset 15px 15px 10px rgba(255, 255, 255, 0.75),
-   -15px -15px 35px rgba(255, 255, 255, 0.55),
-   inset -2px -2px 15px rgba(0, 0, 0, 0.2);
-}
-#wrap #content .clock .numbers{
-   position: absolute;
-   top: 30px;
-   width: 390px;
-   height: 390px;
-   background: #152b4a;
-   border-radius: 50%;
+   width: 270px;
+   height: 270px;
    display: flex;
    justify-content: center;
    align-items: center;
-   box-shadow: 7px 7px 22px #152b4a66,
-   inset 7px 7px 7px rgba(255, 255, 255, 0.55),
-   -9px -9px 15px rgba(255, 255, 255, 1);
-}
-#wrap #content .clock .numbers::before{
-   content: '';
-   position: absolute;
-   width: 4px;
-   height: 4px;
+   background-color: #2f363c;
    border-radius: 50%;
-   background: #e91e63;
-   z-index: 100000;
-   box-shadow: 0 0 0 1px #e91e63,
-   0 0 0 3px #fff,
-   0 0 5px 5px rgba(0, 0, 0, 0.15);
-}
-#wrap #content .clock .numbers span{
-   position: absolute;
-   inset: 15px;
-   text-align: center;
-   color: white;
-   font-size: 1.25em;
-   transform: rotate(calc(30deg * var(--i)));
-}
-#wrap #content .clock .numbers span b{
-   font-weight: 400;
-   display: inline-block;
-   transform: rotate(calc(-30deg * var(--i)));
-}
-#wrap #content .clock .numbers .circle{
-   position: absolute;
-   width: 280px;
-   height: 280px;
-   border: 1px solid rgba(0, 0, 0, 0.75);
-   border-radius: 50%;
-   display: flex;
-   justify-content: center;
-   align-items: flex-start;
-}
-#wrap #content .clock .numbers .circle i{
-   position: absolute;
-   width: 6px;
-   height: 50%;
-   background: var(--clr);
-   opacity: 0.75;
-   transform-origin: bottom;
-   transform: scaleY(0.5);
-}
-#wrap #content .clock .numbers .circle#sec i{
-   width: 2px;
-}
-#wrap #content .clock .numbers .circle#min i{
-   width: 4px;
-}
-#wrap #content .clock .numbers .circle#min{
-   width: 230px;
-   height: 230px;
-}
-#wrap #content .clock .numbers .circle#hrs{
-   width: 180px;
-   height: 180px;
-}
-#wrap #content .clock .numbers .circle::before{
-   content: '';
-   position: absolute;
-   top: -6px;
-   left: 50%;
-   width: 10px;
-   height: 10px;
-   background: var(--clr);
-   border-radius: 50%;
-   transform: translateX(-50%);
-   box-shadow: 0 0 20px var(--clr),
-   0 0 60px var(--clr);
-}
-#wrap #content .clock #time{
-   position: absolute;
-   bottom: 35px;
-   display: flex;
-   padding: 10px 20px;
-   font-size: 2em;
-   font-weight: 600;
-   border-radius: 40px;
-   background: #152b4a;
-   box-shadow: 7px 7px 22px #152b4a66,
-   inset 7px 7px 7px rgba(255, 255, 255, 0.55),
-   -9px -9px 15px rgba(255, 255, 255, 1);
-}
-#wrap #content .clock #time div{
-   position: relative;
-   width: 60px;
-   text-align: center;
-   color: var(--clr);
-   opacity: 0.75;
-}
-#wrap #content .clock #time div:last-child{
-   font-size: 0.5em;
-   justify-content: center;
-   align-items: center;
-   font-weight: 500;
-}
-#wrap #content .clock #time div:nth-child(1)::after,
-#wrap #content .clock #time div:nth-child(2)::after{
-   content: ':';
-   position: absolute;
-   right: -4px;
-}
-#wrap #content .clock #time div:nth-child(2)::after{
-   animation: animate 1s steps(1) infinite;
-}
-@keyframes animate{
-   0%{
-      opacity: 1;
-   }
-   50%{
-      opacity: 0;
-   }
-} */
-#wrap #content .clock{
-   display: flex;
-   justify-content: center;
-   align-items: center;
-   background: #acbcca;
-   position: relative;
-   width: 250px;
-   height: 350px;
-   border-radius: 50px;
-   border-top-left-radius: 250px;
-   border-top-right-radius: 250px;
-   box-shadow: 45px 45px 45px -15px rgba(0, 0, 0, 0.15),
-   inset 15px 15px 10px rgba(255, 255, 255, 0.75),
-   -15px -15px 35px rgba(255, 255, 255, 0.55),
-   inset -2px -2px 15px rgba(0, 0, 0, 0.2);
    float: left;
-   left: 30px;
-}
-#wrap #content .clock .numbers{
+   margin-left: 20px;
+ }
+ #wrap #content #time .circle{
    position: absolute;
-   top: 30px;
-   width: 190px;
-   height: 190px;
-   background: #152b4a;
-   border-radius: 50%;
    display: flex;
    justify-content: center;
    align-items: center;
-   box-shadow: 7px 7px 22px #152b4a66,
-   inset 7px 7px 7px rgba(255, 255, 255, 0.55),
-   -9px -9px 15px rgba(255, 255, 255, 1);
-}
-#wrap #content .clock .numbers::before{
-   content: '';
+ }
+ #wrap #content #time .circle svg{
+   position: relative;
+   transform: rotate(270deg);
+ }
+ #wrap #content #time .circle:nth-child(1) svg{
+   width: 250px;
+   height: 250px;
+ }
+ #wrap #content #time .circle:nth-child(2) svg{
+   width: 210px;
+   height: 210px;
+ }
+ #wrap #content #time .circle:nth-child(3) svg{
+   width: 170px;
+   height: 170px;
+ }
+ #wrap #content #time .circle svg circle{
+   width: 100%;
+   height: 100%;
+   fill: transparent;
+   stroke: var(--clr);
+   stroke-width: 5;
+   transform: translate(5px,5px);
+   opacity: 0.25;
+ }
+ #wrap #content #time .circle:nth-child(1) svg circle{
+   stroke-dasharray: 760;
+   stroke-dashoffset: 760;
+ }
+ #wrap #content #time .circle:nth-child(2) svg circle{
+   stroke-dasharray: 630;
+   stroke-dashoffset: 630;
+ }
+ #wrap #content #time .circle:nth-child(3) svg circle{
+   stroke-dasharray: 510;
+   stroke-dashoffset: 510;
+ }
+ #wrap #content #time .circle .dots{
    position: absolute;
-   width: 4px;
-   height: 4px;
-   border-radius: 50%;
-   background: #e91e63;
-   z-index: 100000;
-   box-shadow: 0 0 0 1px #e91e63,
-   0 0 0 3px #fff,
-   0 0 5px 5px rgba(0, 0, 0, 0.15);
-}
-#wrap #content .clock .numbers span{
-   position: absolute;
-   inset: 9px;
-   text-align: center;
-   color: white;
-   font-size: 0.8em;
-   transform: rotate(calc(30deg * var(--i)));
-}
-#wrap #content .clock .numbers span b{
-   font-weight: 400;
-   display: inline-block;
-   transform: rotate(calc(-30deg * var(--i)));
-}
-#wrap #content .clock .numbers .circle{
-   position: absolute;
-   width: 80px;
-   height: 80px;
-   border: 1px solid rgba(0, 0, 0, 0.75);
-   border-radius: 50%;
+   width: 100%;
+   height: 100%;
    display: flex;
    justify-content: center;
    align-items: flex-start;
-}
-#wrap #content .clock .numbers .circle i{
-   position: absolute;
-   width: 6px;
-   height: 50%;
-   background: var(--clr);
-   opacity: 0.75;
-   transform-origin: bottom;
-   transform: scaleY(0.5);
-}
-#wrap #content .clock .numbers .circle#sec i{
-   width: 2px;
-}
-#wrap #content .clock .numbers .circle#min i{
-   width: 4px;
-}
-#wrap #content .clock .numbers .circle#min{
-   width: 30px;
-   height: 30px;
-}
-#wrap #content .clock .numbers .circle#hrs{
-   width: 130px;
-   height: 130px;
-}
-#wrap #content .clock .numbers .circle::before{
+   z-index: 10;
+ }
+ #wrap #content #time .circle .dots::before{
    content: '';
    position: absolute;
-   top: -6px;
-   left: 50%;
-   width: 10px;
-   height: 10px;
+   top: -3px;
+   width: 15px;
+   height: 15px;
    background: var(--clr);
    border-radius: 50%;
-   transform: translateX(-50%);
    box-shadow: 0 0 20px var(--clr),
-   0 0 60px var(--clr);
-}
-#wrap #content .clock #time{
+   0 0 40px var(--clr),
+   0 0 60px var(--clr),
+   0 0 80px var(--clr);
+ }
+ #wrap #content #time .timeBx{
    position: absolute;
-   bottom: 35px;
+   inset: 0;
    display: flex;
-   padding: 10px 20px;
-   font-size: 1.3em;
-   font-weight: 600;
-   border-radius: 40px;
-   background: #152b4a;
-   box-shadow: 7px 7px 22px #152b4a66,
-   inset 7px 7px 7px rgba(255, 255, 255, 0.55),
-   -9px -9px 15px rgba(255, 255, 255, 1);
-}
-#wrap #content .clock #time div{
-   position: relative;
-   width: 40px;
-   text-align: center;
-   color: var(--clr);
-   opacity: 0.75;
-}
-#wrap #content .clock #time div:last-child{
-   font-size: 0.5em;
    justify-content: center;
    align-items: center;
-   font-weight: 500;
-}
-#wrap #content .clock #time div:nth-child(1)::after,
-#wrap #content .clock #time div:nth-child(2)::after{
+   width: 100px;
+   color: black;
+   font-family: consolas;
+   gap: 15px;
+ }
+ #wrap #content #time .timeBx #hours::after,
+ #wrap #content #time .timeBx #minutes::after{
    content: ':';
    position: absolute;
-   right: -4px;
-}
-#wrap #content .clock #time div:nth-child(2)::after{
-   animation: animate 1s steps(1) infinite;
-}
-@keyframes animate{
-   0%{
-      opacity: 1;
-   }
-   50%{
-      opacity: 0;
-   }
-}
+ }
+ #wrap #content #time .timeBx div{
+   color: var(--c);
+   text-shadow: 0 0 10px var(--c),
+   0 0 20px var(--c);
+ }
+ #wrap #content #time .timeBx .ap{
+   position: absolute;
+   transform: translateY(-15px);
+   font-size: 0.5em;
+   right: -15px;
+ }
+ #wrap #content #partision{
+   border: 1px solid black;
+   width: 75%;
+   height: 240px;
+   float: left;
+   margin: 30px 0px 0px 20px;
+ }
+ #wrap #content #partision h1{
+   font-family: 'PyeongChangPeace-Bold';
+   font-size: 30px;
+ }
